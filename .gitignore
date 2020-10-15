@@ -23,3 +23,6 @@
 hs_err_pid*
 /.idea/*
 /hdfs_samples/target/
+/venv/
+/map-reduce/target/
+/map-reduce/map-reduce.iml

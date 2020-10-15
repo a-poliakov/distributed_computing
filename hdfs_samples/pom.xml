@@ -15,19 +15,20 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <hadoop.version>3.3.0</hadoop.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
-            <version>3.3.0</version>
+            <version>${hadoop.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
-            <version>3.3.0</version>
+            <version>${hadoop.version}</version>
         </dependency>
     </dependencies>
 
