@@ -28,6 +28,10 @@ $HADOOP_HOME/bin/hadoop  jar $HADOOP_HOME/hadoop-streaming.jar \
 3. В папке /tmp/wordCount/ имеем два файла: _SUCCESS и part-00000 (я правильно понимаю, что для большой задачи файлов part-* может быть много? 
 зачем нужен _SUCCESS? просто флаг успешного завершения задачи?)
 
+Вообще-то uniq есть, но нет pipes (http://hadoop.apache.org/docs/r2.7.2/hadoop-streaming/HadoopStreaming.html#Can_I_use_UNIX_pipes﻿)
+
+Поэтому так ﻿можно:  Mapper.py | sort  | ﻿uniq, а вот так - нет  Mapper.py | sort  | ﻿uniq | Reducer.py. Т.е. если к uniq надо еще какой-то логики добавить или форматирования, то придется писать свой редьюсер.
+
 ## Ресурсы
 
 + [Hadoop Streaming Docs](https://hadoop.apache.org/docs/r1.2.1/streaming.html)
