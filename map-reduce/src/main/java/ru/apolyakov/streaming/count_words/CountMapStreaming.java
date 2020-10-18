@@ -1,4 +1,4 @@
-package ru.apolyakov.streaming;
+package ru.apolyakov.streaming.count_words;
 
 import java.io.*;
 import java.util.StringTokenizer;
