@@ -8,6 +8,7 @@
 ## Алгоритмы и парадигмы распределенных вычислений
 
 + [MapReduce](/map-reduce/map-reduce.md)
++ [Stream Pipeline]()
 
 ## Базы данных и хранение данных
 
@@ -21,3 +22,13 @@
 + [Hadoop]()
 + [Spark]()
 + [Ignite]()
+
+## Data Streaming
+
++ [Apache Flink]()
++ [Kafka Streams]()
+
+## Distributed ML
+
++ [Apache Ignite ML]()
++ [Spark ML]()

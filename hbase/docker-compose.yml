@@ -1,0 +1,14 @@
+version: '3'
+services:
+  hbase:
+    image: dajobe/hbase:latest
+    container_name: hbase-compose
+    ports:
+      - "9000:9000"
+    command: bash -c "while ! nc -v -z -w 3 172.17.0.2 50070; do echo waiting for hadoop; sleep 5; done; sh /opt/hbase-server.sh"
+    networks:
+      - hbase-network
+
+networks:
+  hbase-network:
+      name: hbase-network

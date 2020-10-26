@@ -13,5 +13,8 @@
 
         <module>hdfs_samples</module>
         <module>map-reduce</module>
+        <module>hadoop-spring</module>
+        <module>cassandra-spring</module>
+        <module>spark-spring</module>
     </modules>
 </project>
