@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "songs.garbage",
+      "type": "java.util.List",
+      "description": "Description for songs.garbage."
+  }
+] }
