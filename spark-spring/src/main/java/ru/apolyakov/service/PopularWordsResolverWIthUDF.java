@@ -31,7 +31,7 @@ public class PopularWordsResolverWIthUDF {
                 .sort(column("count").desc());
 
         sorted.show();
-        Row[] rows = sorted.take(amount);
+        Row[] rows = (Row[]) sorted.take(amount);
         Set<String> topX = new HashSet<>();
         for (Row row : rows) {
             topX.add(row.getString(0));
