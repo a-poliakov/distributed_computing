@@ -28,6 +28,11 @@
 + [Apache Flink]()
 + [Kafka Streams]()
 
+## ETL и DI
+
++ [Spring Cloud Data Flow]()
++ [StreamSets]()
+
 ## Distributed ML
 
 + [Apache Ignite ML]()
